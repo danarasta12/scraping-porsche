@@ -1,7 +1,7 @@
 # initializers/mailjet.rb
 Mailjet.configure do |config|
-  config.api_key = 'c03c06a66d477422202c8fef4c574fee  '
-  config.secret_key = '21238b5d743a90e1eae94615a3bd54c6'
+  config.api_key = ENV['MJ_APIKEY_PUBLIC']
+  config.secret_key = ENV['MJ_APIKEY_PRIVATE']
   config.default_from = 'alexis.dutoya@gmail.com'
 end
 
